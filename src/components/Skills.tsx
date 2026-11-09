@@ -3,6 +3,7 @@ import type { Credential, SkillGroup } from '../content/types';
 interface SkillsProps {
   groups: SkillGroup[];
   credentials: Credential[];
+  credlyUrl?: string | null;
 }
 
 const KIND_LABELS: Record<Credential['kind'], string> = {
@@ -11,7 +12,7 @@ const KIND_LABELS: Record<Credential['kind'], string> = {
   badge: 'Badges',
 };
 
-export default function Skills({ groups, credentials }: SkillsProps) {
+export default function Skills({ groups, credentials, credlyUrl = null }: SkillsProps) {
   const kinds = (Object.keys(KIND_LABELS) as Credential['kind'][]).filter((kind) =>
     credentials.some((c) => c.kind === kind),
   );
@@ -55,12 +56,21 @@ export default function Skills({ groups, credentials }: SkillsProps) {
                         <span className="credential-meta">
                           {c.issuer}, {c.year}
                         </span>
+                        {c.details && <span className="credential-details">{c.details}</span>}
                       </li>
                     ))}
                 </ul>
               </div>
             ))}
           </div>
+        )}
+
+        {kinds.length > 0 && credlyUrl && (
+          <p className="credly-link">
+            <a href={credlyUrl} target="_blank" rel="noopener noreferrer">
+              See all my verified badges on Credly
+            </a>
+          </p>
         )}
       </div>
     </section>

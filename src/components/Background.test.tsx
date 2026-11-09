@@ -49,6 +49,7 @@ describe('Background', () => {
         quotes={[{ text: 'Ankur made me a better manager.', name: 'Sam Lee', role: 'Engineering Manager, Acme' }]}
       />,
     );
+    expect(screen.getByRole('heading', { name: 'What colleagues and clients say' })).toBeInTheDocument();
     expect(screen.getByText('Ankur made me a better manager.')).toBeInTheDocument();
     expect(screen.getByText('Sam Lee, Engineering Manager, Acme')).toBeInTheDocument();
   });

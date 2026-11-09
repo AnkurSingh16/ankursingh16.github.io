@@ -54,6 +54,8 @@ export interface Credential {
   kind: 'certification' | 'award' | 'badge';
   /** Link to verify it (Credly, issuer page). */
   url?: string;
+  /** One short sentence: what it was for, or what a group of badges covers. */
+  details?: string;
 }
 
 export interface Quote {
@@ -103,6 +105,7 @@ export interface SiteContent {
     linkedin: string;
     medium: string;
     github: string | null;
+    credly: string | null;
     /** null until domain email is set up. */
     email: string | null;
   };

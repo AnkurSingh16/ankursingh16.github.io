@@ -99,9 +99,10 @@ export const site: SiteContent = {
       summary:
         'Engineering leadership for the Vodafone, TPG and iiNet customer apps and the Auth0 customer identity platform.',
       highlights: [
-        'Led five engineering teams across consumer apps and customer identity',
-        'Grew from Principal Engineer, leading 14 engineers and 3 testers, to Senior Software Engineering Manager',
-        'First-level approver for hiring and spend, reporting to the Head of Engineering',
+        'Led 25+ engineers across 15 digital and identity platforms',
+        'Reduced production incidents from more than 50 a month to near zero',
+        'Delivered US$600K in vendor savings',
+        'Grew from Principal Engineer to Senior Software Engineering Manager, with first-level approval of hiring and spend',
       ],
     },
     {
@@ -110,46 +111,167 @@ export const site: SiteContent = {
       positions: ['Team Lead', 'Software Engineer'],
       summary: 'Built and supported banking software for Westpac Group.',
       highlights: [
-        'Delivered software for St.George, BankSA and Bank of Melbourne',
+        'Delivered digital projects for St.George, BankSA and Bank of Melbourne, including work on AWS and Adobe',
         'Led a delivery team from 2019',
       ],
     },
   ],
 
-  education: [{ qualification: 'Bachelor of Engineering, Computer Engineering', institution: null, year: 2015 }],
+  education: [
+    {
+      qualification: 'Bachelor of Engineering, Computer Engineering',
+      institution: "SSVPS's Bapusaheb Shivajirao Deore College of Engineering, Dhule",
+      year: 2015,
+    },
+  ],
 
-  // TODO(skills): add a technical group (languages, cloud, tools) once confirmed.
   skills: [
     {
       name: 'Leadership',
       skills: [
         'Building and leading multiple engineering teams',
         'Hiring and growing engineers',
-        'Planning and delivery across teams',
-        'Stakeholder management',
-        'Budget and spend approval',
+        'Organisational and product leadership',
+        'Delivery transformation and planning',
+        'Stakeholder engagement',
+        'Vendor and budget management',
         'Mentoring and coaching',
       ],
     },
     {
-      name: 'Domains',
+      name: 'Engineering',
       skills: [
-        'Telecommunications',
-        'Banking',
-        'Customer identity and access management (CIAM)',
-        'Consumer mobile and web apps',
+        'Cloud architecture on AWS',
+        'APIs and systems design',
+        'React and React Native',
+        'Reliability, monitoring and incident management',
+        'CI/CD, blue/green releases and Terraform',
       ],
+    },
+    {
+      name: 'Identity and security',
+      skills: [
+        'Customer identity and access management (CIAM) with Auth0',
+        'OAuth, SAML and role-based access control',
+        'Multi-factor authentication and attack protection',
+        'API security and rate limiting',
+      ],
+    },
+    {
+      name: 'AI',
+      skills: [
+        'Generative AI strategy for business',
+        'AI governance and ethics',
+        'AI-assisted app building and prompt engineering',
+      ],
+    },
+    {
+      name: 'Domains',
+      skills: ['Telecommunications', 'Banking', 'Consumer mobile and web apps'],
     },
   ],
 
-  // TODO(credentials): add certifications, awards and badges, e.g.
-  // { title: 'AWS Certified Solutions Architect – Associate', issuer: 'Amazon Web Services', year: 2024, kind: 'certification', url: 'https://…' }
-  credentials: [],
+  credentials: [
+    {
+      title: 'Organizational Leadership',
+      issuer: 'Northwestern University',
+      year: 2026,
+      kind: 'certification',
+    },
+    {
+      title: 'Product Leadership in Complex Organizations',
+      issuer: 'Stanford Online',
+      year: 2026,
+      kind: 'certification',
+      details:
+        'Plus four related courses: Foundations of Product Strategy, From Product Strategy to Product Leadership, Building and Leading Product Organizations, and Leading Products Through Growth and Scale.',
+    },
+    {
+      title: 'Generative AI for Executives and Business Leaders Specialization',
+      issuer: 'IBM',
+      year: 2026,
+      kind: 'certification',
+      url: 'https://www.credly.com/badges/016be3a4-9f7c-44a4-bb1f-12beac6f33ee',
+      details: 'Three courses covering an introduction to generative AI, use-case design and integration strategy.',
+    },
+    {
+      title: 'Google AI Professional Certificate',
+      issuer: 'Google',
+      year: 2026,
+      kind: 'certification',
+      url: 'https://www.credly.com/badges/ed323f72-fbcc-4303-b39f-a934a195fa6e',
+      details:
+        'Eight courses: AI fundamentals, research, writing, content creation, data analysis, planning, app building and app deployment.',
+    },
+    {
+      title: 'Auth0 identity and security',
+      issuer: 'Okta',
+      year: 2026,
+      kind: 'badge',
+      url: 'https://www.credly.com/users/ankur-mahendrasingh-pawar',
+      details:
+        '11 badges, including Extend Auth0 with Actions, Secure Auth0 Apps with MFA, Protect Your API Endpoints with Auth0, and Session and Token Management Best Practices.',
+    },
+    {
+      title: 'Superstar Award',
+      issuer: 'TPG Telecom',
+      year: 2025,
+      kind: 'award',
+      details:
+        'For resolving a major production incident quickly during the iPhone pre-launch, limiting the impact on customers and revenue.',
+    },
+    {
+      title: 'Superstar Award',
+      issuer: 'TPG Telecom',
+      year: 2024,
+      kind: 'award',
+      details: "For digital platform readiness for the iPhone pre-sale, one of the company's highest-revenue events.",
+    },
+    {
+      title: 'On the Spot Award, four times',
+      issuer: 'Tata Consultancy Services',
+      year: 2019,
+      kind: 'award',
+      details: 'Awarded between 2017 and 2019 for work with Westpac Group.',
+    },
+    {
+      title: 'Best Performer Award',
+      issuer: 'Tata Consultancy Services, Westpac relationship',
+      year: 2017,
+      kind: 'award',
+    },
+    {
+      title: 'Best Team Award',
+      issuer: 'Tata Consultancy Services',
+      year: 2017,
+      kind: 'award',
+    },
+  ],
 
-  // TODO(quotes): add 2 or 3 real quotes. The section stays hidden while this is empty.
-  quotes: [],
+  // From LinkedIn recommendations (public). Excerpts are word for word.
+  quotes: [
+    {
+      text: 'Ankur is a professional and highly skilled development lead. He has a talent not only for understanding technical problems and applying practical, intelligent solutions, but also for communicating these solutions back to stakeholders.',
+      name: 'Tristan Foster',
+      role: 'Founder and Principal Consultant, Grand West Consulting',
+    },
+    {
+      text: "As the Project Manager I look for competence and agility, Ankur had exceeded my expectations in every interaction I had with him. … Should our paths cross one day, I'd work with you again in a heartbeat.",
+      name: 'Nizar Abrahams',
+      role: 'Project Manager on a digital transformation project',
+    },
+    {
+      text: 'Having him in the team is great comfort as he is quite proactive and sincere. Being a quick learner, his competency list is always growing.',
+      name: 'Sudhakar Naik',
+      role: 'Former manager at Tata Consultancy Services',
+    },
+    {
+      text: 'I have worked with Ankur for the last 3 years, he is knowledgeable, experienced and very helpful.',
+      name: 'Peter Barratt',
+      role: 'Cloud Banking and Digital Experience, Westpac',
+    },
+  ],
 
-  // TODO(articles): add your latest Medium posts. While empty, the site links to your Medium profile.
   articles: [],
 
   // TODO(newsletter): fill in once the platform is chosen.
@@ -163,6 +285,7 @@ export const site: SiteContent = {
     linkedin: 'https://www.linkedin.com/in/ankur-pawar-262746125',
     medium: 'https://medium.com/@ankursingh2k14',
     github: 'https://github.com/AnkurSingh16',
+    credly: 'https://www.credly.com/users/ankur-mahendrasingh-pawar',
     email: null, // TODO(domain): e.g. 'hello@ankurpawar.com'
   },
 

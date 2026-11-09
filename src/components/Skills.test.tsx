@@ -17,7 +17,7 @@ const credentials: Credential[] = [
     kind: 'certification',
     url: 'https://www.credly.com/badges/example',
   },
-  { title: 'Engineering Excellence Award', issuer: 'Acme', year: 2023, kind: 'award' },
+  { title: 'Engineering Excellence Award', issuer: 'Acme', year: 2023, kind: 'award', details: 'For leading the checkout rebuild.' },
 ];
 
 describe('Skills', () => {
@@ -50,6 +50,16 @@ describe('Skills', () => {
     expect(within(certs).getByText('Amazon Web Services, 2024')).toBeInTheDocument();
 
     expect(screen.getByRole('heading', { name: 'Awards' })).toBeInTheDocument();
+    expect(screen.getByText('For leading the checkout rebuild.')).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: 'Badges' })).not.toBeInTheDocument();
+  });
+
+  it('links to the full Credly profile only when there are credentials to show', () => {
+    const credlyUrl = 'https://www.credly.com/users/example';
+    const { rerender } = render(<Skills groups={groups} credentials={[]} credlyUrl={credlyUrl} />);
+    expect(screen.queryByRole('link', { name: /Credly/ })).not.toBeInTheDocument();
+
+    rerender(<Skills groups={groups} credentials={credentials} credlyUrl={credlyUrl} />);
+    expect(screen.getByRole('link', { name: 'See all my verified badges on Credly' })).toHaveAttribute('href', credlyUrl);
   });
 });

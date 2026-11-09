@@ -18,7 +18,7 @@ describe('site content', () => {
   });
 
   it('uses https for every web link', () => {
-    const links = allStrings(site).filter(([path]) => /url|links\.(linkedin|medium|github)$/i.test(path));
+    const links = allStrings(site).filter(([path]) => /url|links\.(linkedin|medium|github|credly)$/i.test(path));
     expect(links.length).toBeGreaterThan(0);
     for (const [path, url] of links) {
       expect(url, path).toMatch(/^https:\/\//);

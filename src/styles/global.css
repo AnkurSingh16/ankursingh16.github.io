@@ -235,3 +235,9 @@ h3 { font-weight: 700; font-size: 28px; line-height: 1.2; }
 .credential-title, .credential-group a { font-family: var(--font-head); font-weight: 600; }
 .credential-meta { font-size: 15px; color: var(--muted); }
 .background .education { padding-top: 40px; }
+
+.credential-details { font-size: 15px; color: var(--ink-soft); line-height: 1.5; margin-top: 4px; }
+.credly-link { margin: 32px 0 0; font-family: var(--font-head); font-size: 17px; }
+.quotes-title { font-size: 26px; font-weight: 600; margin: 0; }
+.quotes { padding-top: 40px; border-top: 1px solid var(--rule); }
+.quotes blockquote p { font-size: 22px; }

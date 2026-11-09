@@ -46,7 +46,8 @@ export default function Background({ roles, education, quotes }: BackgroundProps
         )}
 
         {quotes.length > 0 && (
-          <div className="quotes" aria-label="What people say">
+          <div className="quotes">
+            <h3 className="quotes-title">What colleagues and clients say</h3>
             {quotes.map((quote) => (
               <figure key={quote.name}>
                 <blockquote>

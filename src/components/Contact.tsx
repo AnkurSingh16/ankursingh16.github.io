@@ -33,6 +33,13 @@ export default function Contact({ links, formEndpoint, topic, onTopicChange }: C
                 Medium
               </a>
             </li>
+            {links.credly && (
+              <li>
+                <a href={links.credly} target="_blank" rel="noopener noreferrer">
+                  Credly
+                </a>
+              </li>
+            )}
             {links.github && (
               <li>
                 <a href={links.github} target="_blank" rel="noopener noreferrer">
