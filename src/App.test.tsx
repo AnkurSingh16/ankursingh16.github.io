@@ -9,8 +9,8 @@ describe('App', () => {
   it('renders every main section', () => {
     render(<App />);
     expect(screen.getByRole('heading', { level: 1, name: site.headline })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Ways to work with me' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: "Where I've worked" })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'How I can help' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Experience' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Get in touch' })).toBeInTheDocument();
     expect(screen.getByRole('contentinfo')).toBeInTheDocument();
   });
@@ -41,13 +41,13 @@ describe('App', () => {
     render(<App content={content} />);
     const nav = screen.getByRole('navigation', { name: 'Main' });
     expect(within(nav).queryByRole('link', { name: 'Work with me' })).not.toBeInTheDocument();
-    expect(screen.queryByRole('heading', { name: 'Ways to work with me' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'How I can help' })).not.toBeInTheDocument();
   });
 
   it('pre-selects the contact form topic when an offer button is used', async () => {
     const user = userEvent.setup();
     render(<App content={makeContent({ contactFormEndpoint: ENDPOINT })} />);
-    expect(screen.getByLabelText("What's it about?")).toHaveValue('A software project');
+    expect(screen.getByLabelText("What's it about?")).toHaveValue('Fractional leadership');
 
     await user.click(screen.getByRole('link', { name: 'Book a mock interview' }));
 

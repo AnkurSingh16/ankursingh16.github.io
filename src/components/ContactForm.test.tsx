@@ -82,9 +82,9 @@ describe('ContactForm', () => {
     const user = userEvent.setup();
     const { onTopicChange } = renderForm();
 
-    await user.selectOptions(screen.getByLabelText("What's it about?"), 'A software project');
+    await user.selectOptions(screen.getByLabelText("What's it about?"), 'Fractional leadership');
 
-    expect(onTopicChange).toHaveBeenCalledWith('A software project');
+    expect(onTopicChange).toHaveBeenCalledWith('Fractional leadership');
   });
 });
 

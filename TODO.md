@@ -6,7 +6,7 @@ Each item names the field in `src/content/site.ts` that changes, where there is 
 ## Decide together
 
 - [ ] **Prices** for the three offers (`offers[].price`). Consider AUD for Australia and INR for India, or one USD price. Until set, each offer says "Get in touch for pricing."
-- [ ] **Software services**: final scope, how the team is described (you, your brother, your wife, later hires), engagement model (fixed price, monthly retainer, hourly) and whether it stays on this site or moves to its own studio brand and domain. Keep in mind recruiters for Head of Engineering roles will see this site. (`offers[0]`, `enabled` to hide it meanwhile)
+- [ ] **Fractional engineering leadership**: final scope, engagement model (days per month, fixed-scope projects, retainer) and how it relates to the software venture with family, which may suit its own studio brand and domain. (`offers[0]`)
 - [ ] **Newsletter**: name, send day, and platform. (`newsletter`)
 - [ ] **Booking tool**: Topmate, Cal.com or Calendly, and whether to use different tools for Indian and Australian clients. (`offers[].bookingUrl`)
 - [ ] **Domain**: which name and extension (.com, .au, .com.au). (`links.email`, `public/CNAME`)

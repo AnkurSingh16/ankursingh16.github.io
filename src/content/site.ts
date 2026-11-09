@@ -10,41 +10,44 @@ export const site: SiteContent = {
 
   photo: { src: `${import.meta.env.BASE_URL}images/ankur.jpg`, alt: 'Ankur Pawar' },
 
-  headline: 'I help teams ship good software, and engineers grow into leaders.',
+  headline: 'I help businesses get technology right, and engineers grow into leaders.',
   intro: [
-    "I'm Ankur, an engineering leader in Sydney with eleven years in Australian telco and banking. Most recently I was Senior Software Engineering Manager at TPG Telecom, leading five teams across the Vodafone, TPG and iiNet apps and the Auth0 customer identity platform.",
-    'Now I take on software projects with a small team, and mentor engineers and managers who want to get better at the job.',
+    "I'm Ankur Pawar, an engineering leader based in Sydney. Over eleven years I've built and led engineering teams in telecommunications and banking, including the teams behind the Vodafone, TPG and iiNet customer apps and the Auth0 identity platform at TPG Telecom.",
+    'Through this practice, I work with small businesses as a fractional engineering leader, and mentor engineers and managers who want to reach the next stage of their careers.',
   ],
 
   offers: [
     {
-      id: 'services',
-      // TODO(services): confirm scope, team description and pricing model.
+      id: 'fractional',
+      // TODO(services): confirm scope and engagement model.
       enabled: true,
-      title: 'Software services',
-      audience: 'For founders and businesses who need a product built, or an existing one put right.',
+      title: 'Fractional engineering leadership',
+      audience:
+        'For small businesses and startups that need senior technology leadership without a full-time hire.',
       points: [
-        'Web and mobile apps, from first version to app store release',
-        'Customer login and identity on Auth0, set up properly the first time',
-        'Rescuing stalled projects and modernising legacy platforms',
+        'A technology strategy and roadmap your team can actually deliver',
+        'Hiring and growing your first engineering team',
+        'Choosing and managing vendors, agencies and contractors',
+        'Getting stalled projects back on track',
       ],
-      format: 'Fixed price or monthly.',
+      format: 'A few days a month, or a fixed-scope engagement.',
       price: null, // TODO(pricing)
-      ctaLabel: 'Discuss a project',
-      topic: 'A software project',
+      ctaLabel: "Let's talk",
+      topic: 'Fractional leadership',
       bookingUrl: null,
     },
     {
       id: 'mentoring',
       enabled: true,
-      title: '1:1 mentoring',
-      audience: 'For senior engineers moving into management, and managers in their first couple of years.',
+      title: 'Leadership mentoring',
+      audience:
+        'For engineers stepping into leadership, and managers ready for the next stage of their careers.',
       points: [
-        'Your first 90 days managing a team',
-        'Hiring, one-on-ones and hard performance conversations',
-        'Working with product managers, stakeholders and your own boss',
+        'Your first 90 days leading a team',
+        'Hiring, one-on-ones and difficult performance conversations',
+        'Working effectively with product managers, stakeholders and your own manager',
       ],
-      format: '45 minutes on video.',
+      format: '45-minute video sessions.',
       price: null, // TODO(pricing)
       ctaLabel: 'Book a session',
       topic: 'Mentoring',
@@ -54,13 +57,14 @@ export const site: SiteContent = {
       id: 'interviews',
       enabled: true,
       title: 'Interview preparation',
-      audience: 'For people going for Engineering Manager, Senior EM and Head of Engineering roles.',
+      audience:
+        'For candidates applying for Engineering Manager, Senior Engineering Manager and Head of Engineering roles.',
       points: [
         'Mock leadership and behavioural interviews, with written feedback',
-        "System design from a manager's seat: trade-offs, not trivia",
-        'CV and LinkedIn review for leadership roles',
+        "System design from a leader's perspective: trade-offs, not trivia",
+        'CV and LinkedIn reviews for leadership roles',
       ],
-      format: '60 minutes on video.',
+      format: '60-minute video sessions.',
       price: null, // TODO(pricing)
       ctaLabel: 'Book a mock interview',
       topic: 'Interview preparation',
@@ -68,20 +72,20 @@ export const site: SiteContent = {
     },
   ],
 
+  // Durations rather than date ranges: the experience matters, not the calendar.
   roles: [
     {
       company: 'TPG Telecom',
-      dates: '2021 to 2026',
-      titles:
-        'Principal Engineer, then Software Engineering Manager, then Senior Software Engineering Manager',
+      dates: '5 years',
+      titles: 'Principal Engineer, Software Engineering Manager and Senior Software Engineering Manager',
       summary:
-        'Led around five teams building the Vodafone, TPG and iiNet customer apps and the Auth0 identity platform behind them. First-level approver for hiring and spend, reporting to the Head of Engineering.',
+        'Led five engineering teams responsible for the Vodafone, TPG and iiNet customer apps and the Auth0 customer identity platform. Responsible for hiring and budget across those teams, reporting to the Head of Engineering.',
     },
     {
-      company: 'Tata Consultancy Services, for Westpac Group',
-      dates: '2015 to 2021',
-      titles: 'Engineer, then team lead from 2019',
-      summary: 'Banking software for St.George, BankSA and Bank of Melbourne.',
+      company: 'Tata Consultancy Services',
+      dates: '6 years',
+      titles: 'Software Engineer and Team Lead, working with Westpac Group',
+      summary: 'Built and supported banking software for St.George, BankSA and Bank of Melbourne.',
     },
   ],
 

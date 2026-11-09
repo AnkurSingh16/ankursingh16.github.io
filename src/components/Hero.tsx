@@ -19,7 +19,7 @@ export default function Hero({ headline, intro, photo, location, showNewsletterL
           ))}
           <div className="actions">
             <a className="btn btn-primary" href="#contact">
-              Discuss a project
+              Get in touch
             </a>
             <a className="btn btn-outline" href="#mentoring">
               Book a mentoring session

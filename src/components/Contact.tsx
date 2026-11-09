@@ -15,8 +15,7 @@ export default function Contact({ links, formEndpoint, topic, onTopicChange }: C
         <div className="contact-intro">
           <h2 id="contact-title">Get in touch</h2>
           <p>
-            Tell me a little about what you need, whether it's a project, mentoring or interview prep, and I'll get
-            back to you.
+            Tell me a little about your business or your goals, and I'll get back to you.
           </p>
           <ul className="contact-links">
             {links.email && (
@@ -48,7 +47,7 @@ export default function Contact({ links, formEndpoint, topic, onTopicChange }: C
           <ContactForm endpoint={formEndpoint} topic={topic} onTopicChange={onTopicChange} />
         ) : (
           <div className="contact-fallback">
-            <p>The quickest way to reach me right now is a message on LinkedIn. Mention what it's about:</p>
+            <p>The easiest way to reach me is a message on LinkedIn. Let me know what it's about:</p>
             <p className="contact-topic">{topic}</p>
             <a className="btn btn-primary" href={links.linkedin} target="_blank" rel="noopener noreferrer">
               Message me on LinkedIn

@@ -1,5 +1,5 @@
 export const TOPICS = [
-  'A software project',
+  'Fractional leadership',
   'Mentoring',
   'Interview preparation',
   'Something else',

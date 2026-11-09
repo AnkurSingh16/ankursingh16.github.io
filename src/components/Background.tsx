@@ -9,7 +9,7 @@ export default function Background({ roles, quotes }: BackgroundProps) {
   return (
     <section className="background" id="background" aria-labelledby="bg-title">
       <div className="wrap">
-        <h2 id="bg-title">Where I've worked</h2>
+        <h2 id="bg-title">Experience</h2>
         <ol className="roles">
           {roles.map((role) => (
             <li className="role" key={role.company}>

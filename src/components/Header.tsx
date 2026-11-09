@@ -12,7 +12,7 @@ export default function Header({ name, showWork }: HeaderProps) {
         </a>
         <nav className="site-nav" aria-label="Main">
           {showWork && <a href="#work">Work with me</a>}
-          <a href="#background">Background</a>
+          <a href="#background">Experience</a>
           <a href="#writing">Writing</a>
           <a href="#contact">Contact</a>
           <a className="btn btn-primary btn-sm" href="#contact">

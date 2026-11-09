@@ -9,10 +9,9 @@ export default function Offers({ offers, onSelectTopic }: OffersProps) {
   return (
     <section className="offers" id="work" aria-labelledby="work-title">
       <div className="wrap">
-        <h2 id="work-title">Ways to work with me</h2>
+        <h2 id="work-title">How I can help</h2>
         <p className="lede">
-          {offers.length === 1 ? 'One thing I do well.' : `${countWord(offers.length)} things I do well.`} If
-          what you need sits between them, write to me anyway.
+          If what you need doesn't fit neatly into one of these, get in touch anyway.
         </p>
         {offers.map((offer) => (
           <OfferRow key={offer.id} offer={offer} onSelectTopic={onSelectTopic} />
@@ -51,9 +50,4 @@ function OfferRow({ offer, onSelectTopic }: { offer: Offer; onSelectTopic: (topi
       </div>
     </article>
   );
-}
-
-function countWord(n: number): string {
-  const words = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six'];
-  return words[n] ?? String(n);
 }

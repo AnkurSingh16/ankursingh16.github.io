@@ -56,13 +56,15 @@ describe('Offers', () => {
     expect(cta).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
-  it('counts the offers in the intro', () => {
+  it('renders every offer it is given, in order', () => {
     render(
       <Offers
         offers={[baseOffer, { ...baseOffer, id: 'two', title: 'Second' }, { ...baseOffer, id: 'three', title: 'Third' }]}
         onSelectTopic={vi.fn()}
       />,
     );
-    expect(screen.getByText(/^Three things I do well\./)).toBeInTheDocument();
+    const titles = screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
+    expect(titles).toEqual(['1:1 mentoring', 'Second', 'Third']);
+    expect(screen.getByRole('heading', { level: 2, name: 'How I can help' })).toBeInTheDocument();
   });
 });
