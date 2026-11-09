@@ -44,7 +44,7 @@ jobs:
       - name: Read Pages settings
         id: pages
         if: github.event_name != 'pull_request'
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       # base_path is "" for a user site (ankursingh16.github.io) or a custom domain, so assets load from "/".
       - name: Build
