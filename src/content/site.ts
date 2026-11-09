@@ -95,17 +95,56 @@ export const site: SiteContent = {
     {
       company: 'TPG Telecom',
       dates: '5 years',
-      titles: 'Principal Engineer, Software Engineering Manager and Senior Software Engineering Manager',
+      positions: ['Senior Software Engineering Manager', 'Software Engineering Manager', 'Principal Engineer'],
       summary:
-        'Led five engineering teams responsible for the Vodafone, TPG and iiNet customer apps and the Auth0 customer identity platform. Responsible for hiring and budget across those teams, reporting to the Head of Engineering.',
+        'Engineering leadership for the Vodafone, TPG and iiNet customer apps and the Auth0 customer identity platform.',
+      highlights: [
+        'Led five engineering teams across consumer apps and customer identity',
+        'Grew from Principal Engineer, leading 14 engineers and 3 testers, to Senior Software Engineering Manager',
+        'First-level approver for hiring and spend, reporting to the Head of Engineering',
+      ],
     },
     {
       company: 'Tata Consultancy Services',
       dates: '6 years',
-      titles: 'Software Engineer and Team Lead, working with Westpac Group',
-      summary: 'Built and supported banking software for St.George, BankSA and Bank of Melbourne.',
+      positions: ['Team Lead', 'Software Engineer'],
+      summary: 'Built and supported banking software for Westpac Group.',
+      highlights: [
+        'Delivered software for St.George, BankSA and Bank of Melbourne',
+        'Led a delivery team from 2019',
+      ],
     },
   ],
+
+  education: [{ qualification: 'Bachelor of Engineering, Computer Engineering', institution: null, year: 2015 }],
+
+  // TODO(skills): add a technical group (languages, cloud, tools) once confirmed.
+  skills: [
+    {
+      name: 'Leadership',
+      skills: [
+        'Building and leading multiple engineering teams',
+        'Hiring and growing engineers',
+        'Planning and delivery across teams',
+        'Stakeholder management',
+        'Budget and spend approval',
+        'Mentoring and coaching',
+      ],
+    },
+    {
+      name: 'Domains',
+      skills: [
+        'Telecommunications',
+        'Banking',
+        'Customer identity and access management (CIAM)',
+        'Consumer mobile and web apps',
+      ],
+    },
+  ],
+
+  // TODO(credentials): add certifications, awards and badges, e.g.
+  // { title: 'AWS Certified Solutions Architect – Associate', issuer: 'Amazon Web Services', year: 2024, kind: 'certification', url: 'https://…' }
+  credentials: [],
 
   // TODO(quotes): add 2 or 3 real quotes. The section stays hidden while this is empty.
   quotes: [],

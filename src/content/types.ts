@@ -28,9 +28,32 @@ export interface Offer {
 
 export interface Role {
   company: string;
+  /** A duration such as "5 years". */
   dates: string;
-  titles: string;
+  /** Positions held, most senior first. */
+  positions: string[];
   summary: string;
+  highlights: string[];
+}
+
+export interface Education {
+  qualification: string;
+  institution: string | null;
+  year: number;
+}
+
+export interface SkillGroup {
+  name: string;
+  skills: string[];
+}
+
+export interface Credential {
+  title: string;
+  issuer: string;
+  year: number;
+  kind: 'certification' | 'award' | 'badge';
+  /** Link to verify it (Credly, issuer page). */
+  url?: string;
 }
 
 export interface Quote {
@@ -69,6 +92,10 @@ export interface SiteContent {
   intro: string[];
   offers: Offer[];
   roles: Role[];
+  education: Education[];
+  skills: SkillGroup[];
+  /** Certifications, awards and badges. The section stays hidden while empty. */
+  credentials: Credential[];
   quotes: Quote[];
   articles: Article[];
   newsletter: Newsletter;

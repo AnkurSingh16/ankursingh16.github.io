@@ -5,14 +5,39 @@ import Background from './Background';
 
 describe('Background', () => {
   it('lists roles in the order given, most recent first', () => {
-    render(<Background roles={site.roles} quotes={[]} />);
+    render(<Background roles={site.roles} education={[]} quotes={[]} />);
     const companies = screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
     expect(companies).toEqual(site.roles.map((role) => role.company));
     expect(companies[0]).toBe('TPG Telecom');
   });
 
+  it('shows the positions held and each highlight', () => {
+    const role = {
+      company: 'Acme',
+      dates: '3 years',
+      positions: ['Engineering Manager', 'Senior Engineer'],
+      summary: 'Ran the payments team.',
+      highlights: ['Shipped the new checkout', 'Hired four engineers'],
+    };
+    render(<Background roles={[role]} education={[]} quotes={[]} />);
+    expect(screen.getByText('Engineering Manager, Senior Engineer')).toBeInTheDocument();
+    expect(screen.getByText('Shipped the new checkout')).toBeInTheDocument();
+    expect(screen.getByText('Hired four engineers')).toBeInTheDocument();
+  });
+
+  it('shows education, leaving out the institution when it is not set', () => {
+    render(
+      <Background
+        roles={site.roles}
+        education={[{ qualification: 'Bachelor of Engineering, Computer Engineering', institution: null, year: 2015 }]}
+        quotes={[]}
+      />,
+    );
+    expect(screen.getByText('Bachelor of Engineering, Computer Engineering, 2015')).toBeInTheDocument();
+  });
+
   it('hides the quotes block while there are no quotes', () => {
-    const { container } = render(<Background roles={site.roles} quotes={[]} />);
+    const { container } = render(<Background roles={site.roles} education={[]} quotes={[]} />);
     expect(container.querySelector('blockquote')).toBeNull();
   });
 
@@ -20,6 +45,7 @@ describe('Background', () => {
     render(
       <Background
         roles={site.roles}
+        education={[]}
         quotes={[{ text: 'Ankur made me a better manager.', name: 'Sam Lee', role: 'Engineering Manager, Acme' }]}
       />,
     );

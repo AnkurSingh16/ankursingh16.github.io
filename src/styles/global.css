@@ -215,3 +215,23 @@ h3 { font-weight: 700; font-size: 28px; line-height: 1.2; }
 .contact-fallback .btn { margin-top: 12px; }
 .contact-form--sent h3 { margin-bottom: 8px; }
 .contact-form--sent p { margin: 0 0 20px; color: var(--ink-soft); }
+
+/* Experience highlights and education */
+.highlights { margin: 12px 0 0; padding-left: 20px; display: grid; gap: 6px; max-width: 38em; }
+.education { border-top: 1px solid var(--rule); }
+.education .role-body p { margin: 0; }
+
+/* Skills and credentials */
+.skills { background: var(--surface); border-block: 1px solid var(--rule); }
+.skills > .wrap { padding-block: var(--section); }
+.skills h2 { margin-bottom: 48px; }
+.skill-groups, .credentials { display: flex; flex-wrap: wrap; gap: 40px 64px; }
+.credentials { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--rule); }
+.skill-group, .credential-group { flex: 1 1 300px; min-width: 0; }
+.skill-group h3, .credential-group h3 { font-size: 22px; margin-bottom: 14px; }
+.skill-group ul, .credential-group ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.skill-group li { padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.credential-group li { display: grid; gap: 2px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.credential-title, .credential-group a { font-family: var(--font-head); font-weight: 600; }
+.credential-meta { font-size: 15px; color: var(--muted); }
+.background .education { padding-top: 40px; }

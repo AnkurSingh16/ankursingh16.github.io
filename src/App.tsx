@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Offers from './components/Offers';
 import Background from './components/Background';
+import Skills from './components/Skills';
 import Writing from './components/Writing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -33,7 +34,8 @@ export default function App({ content = site }: AppProps) {
           showNewsletterLink={hasNewsletter}
         />
         {enabledOffers.length > 0 && <Offers offers={enabledOffers} onSelectTopic={setTopic} />}
-        <Background roles={content.roles} quotes={content.quotes} />
+        <Background roles={content.roles} education={content.education} quotes={content.quotes} />
+        <Skills groups={content.skills} credentials={content.credentials} />
         <Writing
           newsletter={content.newsletter}
           articles={content.articles}
