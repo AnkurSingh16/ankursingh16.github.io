@@ -8,9 +8,7 @@ export const site: SiteContent = {
   name: 'Ankur Pawar',
   location: 'Sydney, Australia',
 
-  // TODO(photo): add public/images/ankur.jpg, then set:
-  // photo: { src: `${import.meta.env.BASE_URL}images/ankur.jpg`, alt: 'Ankur Pawar' },
-  photo: null,
+  photo: { src: `${import.meta.env.BASE_URL}images/ankur.jpg`, alt: 'Ankur Pawar' },
 
   headline: 'I help teams ship good software, and engineers grow into leaders.',
   intro: [

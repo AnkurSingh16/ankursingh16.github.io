@@ -33,7 +33,7 @@ export default function Hero({ headline, intro, photo, location, showNewsletterL
         </div>
         {photo && (
           <figure>
-            <img src={photo.src} alt={photo.alt} width={900} height={1150} />
+            <img src={photo.src} alt={photo.alt} width={1000} height={1000} fetchPriority="high" />
             <figcaption>{location}</figcaption>
           </figure>
         )}
