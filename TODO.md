@@ -17,7 +17,7 @@ Each item names the field in `src/content/site.ts` that changes, where there is 
 - [ ] Protect `main`: Settings → Branches → require the CI check to pass
 - [ ] Buy the domain and connect it (README → Connecting a custom domain)
 - [ ] Domain email, e.g. hello@yourdomain.com (`links.email`)
-- [ ] Free Formspree form for the contact section (`contactFormEndpoint`)
+- [x] Free Formspree form for the contact section (`contactFormEndpoint`)
 - [ ] Booking account and links (`offers[].bookingUrl`)
 - [ ] Newsletter account (`newsletter`)
 - [ ] A real, recent photo at `public/images/ankur.jpg` (`photo`)
