@@ -14,6 +14,7 @@ Each item names the field in `src/content/site.ts` that changes, where there is 
 ## Set up (you)
 
 - [ ] Turn on GitHub Pages: Settings → Pages → Source: **GitHub Actions**
+- [ ] Protect `main`: Settings → Branches → require the CI check to pass
 - [ ] Buy the domain and connect it (README → Connecting a custom domain)
 - [ ] Domain email, e.g. hello@yourdomain.com (`links.email`)
 - [ ] Free Formspree form for the contact section (`contactFormEndpoint`)
