@@ -11,7 +11,7 @@ export default function Offers({ offers, onSelectTopic }: OffersProps) {
       <div className="wrap">
         <h2 id="work-title">How I can help</h2>
         <p className="lede">
-          If what you need doesn't fit neatly into one of these, get in touch anyway.
+          I take on a limited number of engagements at a time, so each one gets proper attention. If what you need doesn't fit neatly into one of these, get in touch anyway.
         </p>
         {offers.map((offer) => (
           <OfferRow key={offer.id} offer={offer} onSelectTopic={onSelectTopic} />

@@ -10,10 +10,10 @@ export const site: SiteContent = {
 
   photo: { src: `${import.meta.env.BASE_URL}images/ankur.jpg`, alt: 'Ankur Pawar' },
 
-  headline: 'I help businesses get technology right, and engineers grow into leaders.',
+  headline: 'I help businesses get technology right, and engineers reach their next level.',
   intro: [
     "I'm Ankur Pawar, an engineering leader based in Sydney. Over eleven years I've built and led engineering teams in telecommunications and banking, including the teams behind the Vodafone, TPG and iiNet customer apps and the Auth0 identity platform at TPG Telecom.",
-    'Through this practice, I work with small businesses as a fractional engineering leader, and mentor engineers and managers who want to reach the next stage of their careers.',
+    'Alongside my career in engineering leadership, I take on a small number of engagements: fractional leadership and software delivery for small businesses, and mentoring and interview preparation for engineers at every level.',
   ],
 
   offers: [
@@ -37,15 +37,33 @@ export const site: SiteContent = {
       bookingUrl: null,
     },
     {
+      id: 'services',
+      // TODO(services): confirm scope and how the delivery team is described.
+      enabled: true,
+      title: 'Software services',
+      audience: 'For businesses that need a product built, improved or rescued.',
+      points: [
+        'Web and mobile apps, from first version to launch',
+        'Secure customer login and identity with Auth0',
+        'Modernising legacy systems and improving reliability',
+      ],
+      format: 'Fixed-scope projects, delivered with a small, trusted team.',
+      price: null, // TODO(pricing)
+      ctaLabel: 'Discuss a project',
+      topic: 'Software services',
+      bookingUrl: null,
+    },
+    {
       id: 'mentoring',
       enabled: true,
-      title: 'Leadership mentoring',
+      title: 'Career and leadership mentoring',
       audience:
-        'For engineers stepping into leadership, and managers ready for the next stage of their careers.',
+        'For engineers at every stage: junior, mid-level and senior engineers, tech leads, staff and principal engineers, and engineering managers.',
       points: [
-        'Your first 90 days leading a team',
-        'Hiring, one-on-ones and difficult performance conversations',
-        'Working effectively with product managers, stakeholders and your own manager',
+        'Growing from junior to senior: ownership, scope and impact',
+        'Choosing between the technical (staff and principal) and management paths',
+        'Your first 90 days as a tech lead or manager',
+        'Influencing stakeholders and leading without authority',
       ],
       format: '45-minute video sessions.',
       price: null, // TODO(pricing)
@@ -58,11 +76,11 @@ export const site: SiteContent = {
       enabled: true,
       title: 'Interview preparation',
       audience:
-        'For candidates applying for Engineering Manager, Senior Engineering Manager and Head of Engineering roles.',
+        'For software engineers at every level, from junior to principal, and for Engineering Manager, Senior Engineering Manager and Head of Engineering roles.',
       points: [
-        'Mock leadership and behavioural interviews, with written feedback',
-        "System design from a leader's perspective: trade-offs, not trivia",
-        'CV and LinkedIn reviews for leadership roles',
+        'Mock technical, system design and behavioural interviews, with written feedback',
+        'Leadership interviews for tech lead, staff, principal and management roles',
+        'CV and LinkedIn reviews tailored to the role you want',
       ],
       format: '60-minute video sessions.',
       price: null, // TODO(pricing)
