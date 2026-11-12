@@ -34,7 +34,12 @@ export default function App({ content = site }: AppProps) {
           showNewsletterLink={hasNewsletter}
         />
         {enabledOffers.length > 0 && <Offers offers={enabledOffers} onSelectTopic={setTopic} />}
-        <Background roles={content.roles} education={content.education} quotes={content.quotes} />
+        <Background
+          career={content.career}
+          roles={content.roles}
+          education={content.education}
+          quotes={content.quotes}
+        />
         <Skills groups={content.skills} credentials={content.credentials} credlyUrl={content.links.credly} />
         <Writing
           newsletter={content.newsletter}

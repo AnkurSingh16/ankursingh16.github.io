@@ -1,16 +1,32 @@
-import type { Education, Quote, Role } from '../content/types';
+import type { Career, Education, Quote, Role } from '../content/types';
 
 interface BackgroundProps {
+  career: Career;
   roles: Role[];
   education: Education[];
   quotes: Quote[];
 }
 
-export default function Background({ roles, education, quotes }: BackgroundProps) {
+export default function Background({ career, roles, education, quotes }: BackgroundProps) {
   return (
     <section className="background" id="background" aria-labelledby="bg-title">
       <div className="wrap">
         <h2 id="bg-title">Experience</h2>
+        {career.summary !== '' && (
+          <div className="career-summary">
+            <p>{career.summary}</p>
+            {career.teamsLed.length > 0 && (
+              <>
+                <p className="teams-led-title">Teams led</p>
+                <ul className="teams-led">
+                  {career.teamsLed.map((team) => (
+                    <li key={team}>{team}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+        )}
         <ol className="roles">
           {roles.map((role) => (
             <li className="role" key={role.company}>

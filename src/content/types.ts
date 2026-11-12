@@ -86,6 +86,13 @@ export interface Photo {
   alt: string;
 }
 
+/** The public career summary shown above the experience list. */
+export interface Career {
+  summary: string;
+  /** Teams and platforms I have led, in the order they should be read. */
+  teamsLed: string[];
+}
+
 export interface SiteContent {
   name: string;
   location: string;
@@ -93,6 +100,7 @@ export interface SiteContent {
   headline: string;
   intro: string[];
   offers: Offer[];
+  career: Career;
   roles: Role[];
   education: Education[];
   skills: SkillGroup[];

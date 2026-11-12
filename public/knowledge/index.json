@@ -1,0 +1,29 @@
+{
+  "source": "src/content/site.ts",
+  "files": [
+    {
+      "path": "about.md",
+      "title": "Ankur Pawar"
+    },
+    {
+      "path": "career.md",
+      "title": "Career"
+    },
+    {
+      "path": "services.md",
+      "title": "Services"
+    },
+    {
+      "path": "mentoring.md",
+      "title": "Mentoring"
+    },
+    {
+      "path": "writing.md",
+      "title": "Writing"
+    },
+    {
+      "path": "contact.md",
+      "title": "Contact"
+    }
+  ]
+}
