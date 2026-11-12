@@ -91,6 +91,17 @@ export const site: SiteContent = {
   ],
 
   // Durations rather than date ranges: the experience matters, not the calendar.
+  // Draft for review. Built only from the roles, highlights and intro shown on the site.
+  career: {
+    summary:
+      'I have worked in engineering for eleven years, in telecommunications and banking. At TPG Telecom I led engineering teams for the Vodafone, TPG and iiNet customer apps and for the Auth0 customer identity platform. Before that I was a software engineer and team lead at Tata Consultancy Services, building and supporting banking software for Westpac Group.',
+    teamsLed: [
+      'Customer apps for Vodafone, TPG and iiNet',
+      'The Auth0 customer identity platform at TPG Telecom',
+      'A delivery team at Tata Consultancy Services from 2019',
+    ],
+  },
+
   roles: [
     {
       company: 'TPG Telecom',
