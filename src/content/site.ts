@@ -66,7 +66,7 @@ export const site: SiteContent = {
         'Influencing stakeholders and leading without authority',
       ],
       format: '45-minute video sessions.',
-      price: null, // TODO(pricing)
+      price: 'AUD 150 + GST. 30% off for students.',
       ctaLabel: 'Book a session',
       topic: 'Mentoring',
       bookingUrl: null, // TODO(booking)
@@ -83,7 +83,7 @@ export const site: SiteContent = {
         'CV and LinkedIn reviews tailored to the role you want',
       ],
       format: '60-minute video sessions.',
-      price: null, // TODO(pricing)
+      price: 'AUD 180 + GST. 30% off for students.',
       ctaLabel: 'Book a mock interview',
       topic: 'Interview preparation',
       bookingUrl: null, // TODO(booking)
