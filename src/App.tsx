@@ -1,14 +1,16 @@
-import { useState } from 'react';
-import { site } from './content/site';
-import { TOPICS, type SiteContent, type Topic } from './content/types';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Offers from './components/Offers';
-import Background from './components/Background';
-import Skills from './components/Skills';
-import Writing from './components/Writing';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { useState } from "react";
+import { site } from "./content/site";
+import { TOPICS, type SiteContent, type Topic } from "./content/types";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Offers from "./components/Offers";
+import Background from "./components/Background";
+import Skills from "./components/Skills";
+import Writing from "./components/Writing";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { ChatWidget } from "./vendor/chat-widget/index.js";
+import "./vendor/chat-widget/widget.css";
 
 interface AppProps {
   content?: SiteContent;
@@ -33,14 +35,20 @@ export default function App({ content = site }: AppProps) {
           location={content.location}
           showNewsletterLink={hasNewsletter}
         />
-        {enabledOffers.length > 0 && <Offers offers={enabledOffers} onSelectTopic={setTopic} />}
+        {enabledOffers.length > 0 && (
+          <Offers offers={enabledOffers} onSelectTopic={setTopic} />
+        )}
         <Background
           career={content.career}
           roles={content.roles}
           education={content.education}
           quotes={content.quotes}
         />
-        <Skills groups={content.skills} credentials={content.credentials} credlyUrl={content.links.credly} />
+        <Skills
+          groups={content.skills}
+          credentials={content.credentials}
+          credlyUrl={content.links.credly}
+        />
         <Writing
           newsletter={content.newsletter}
           articles={content.articles}
@@ -54,6 +62,15 @@ export default function App({ content = site }: AppProps) {
           onTopicChange={setTopic}
         />
       </main>
+      {import.meta.env.VITE_CHAT_API_URL !== undefined &&
+        import.meta.env.VITE_CHAT_API_URL !== "" && (
+          <ChatWidget
+            apiUrl={import.meta.env.VITE_CHAT_API_URL}
+            instanceId="portfolio"
+            title="Ask about Ankur"
+            contactEndpoint={content.contactFormEndpoint ?? undefined}
+          />
+        )}
       <Footer name={content.name} location={content.location} />
     </>
   );
