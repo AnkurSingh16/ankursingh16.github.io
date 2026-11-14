@@ -9,9 +9,9 @@ For engineers at every stage: junior, mid-level and senior engineers, tech leads
 - Your first 90 days as a tech lead or manager
 - Influencing stakeholders and leading without authority
 
-45-minute video sessions. AUD 150 + GST. 30% off for students.
+45-minute video sessions. AUD 150 + GST. Students: AUD 105 + GST with a student ID.
 
-To book or ask about this: https://ankursingh16.github.io/#contact
+To book or ask about this: https://cal.com/ankur-pawar-hqweow/career-and-leadership-mentoring-gst
 
 ## Interview preparation
 
@@ -21,6 +21,6 @@ For software engineers at every level, from junior to principal, and for Enginee
 - Leadership interviews for tech lead, staff, principal and management roles
 - CV and LinkedIn reviews tailored to the role you want
 
-60-minute video sessions. AUD 180 + GST. 30% off for students.
+60-minute video sessions. AUD 180 + GST. Students: AUD 126 + GST with a student ID.
 
-To book or ask about this: https://ankursingh16.github.io/#contact
+To book or ask about this: https://cal.com/ankur-pawar-hqweow/interview-preparation-gst
